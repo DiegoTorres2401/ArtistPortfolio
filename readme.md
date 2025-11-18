@@ -13,16 +13,20 @@ El proyecto está desarrollado con **HTML, CSS y JavaScript** puro, y utiliza **
 ## 📁 Estructura del proyecto
 
 ├── index.html
-├── about.html
-├── gallery.html
-├── commissions.html
-├── style.css
-├── scripts.js
-├── validacionFormulario.js
-└── imagenes/
 
-yaml
-Copiar código
+├── about.html
+
+├── gallery.html
+
+├── commissions.html
+
+├── style.css
+
+├── scripts.js
+
+├── validacionFormulario.js
+
+└── imagenes/
 
 ---
 
