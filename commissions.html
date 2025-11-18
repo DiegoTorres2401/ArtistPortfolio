@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comisiones</title>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Galería</a></li>
+      <li><a href="about.html">Acerca de mí</a></li>
+      <li><a href="commissions.html">Comisiones</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="commissions-container">
+    <h2>Tipos de Comisiones — Elegí lo que mejor se adapte a tu idea</h2>
+
+    <div class="commission-grid">
+      <div class="commission-card">
+        <img src="imagenes/art1.jpg" alt="Sketch / Lineart">
+        <h3>Sketch / Lineart</h3>
+        <p>Boceto limpio o lineart pulido. Ideal para conceptos de personajes, ideas rápidas o comisiones simples con mucha personalidad.</p>
+      </div>
+
+      <div class="commission-card">
+        <img src="imagenes/art1.jpg" alt="Retrato">
+        <h3>Retrato</h3>
+        <p>Headshot o busto con render detallado. Perfecto para fotos de perfil, retratos de OCs o fanarts estilizados.</p>
+      </div>
+
+      <div class="commission-card">
+        <img src="imagenes/art1.jpg" alt="Medio Cuerpo / Cuerpo Completo">
+        <h3>Medio Cuerpo / Cuerpo Completo</h3>
+        <p>Desde cintura para arriba hasta ilustración completa de cuerpo entero. Incluye pose, detalles de ropa y expresión artística.</p>
+      </div>
+
+      <div class="commission-card">
+        <img src="imagenes/art1.jpg" alt="Fondo Complejo">
+        <h3>Fondo Complejo</h3>
+        <p>Escenas con ambientes completos, iluminación dinámica, props o elementos de worldbuilding para dar vida a tu idea.</p>
+      </div>
+    </div>
+
+<section class="terms-section" style="margin-top: 60px; max-width: 800px; margin-left: auto; margin-right: auto; color: #ccc; font-size: 0.95rem; line-height: 1.6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+  <h2 style="text-align: center; margin-bottom: 20px; font-family: inherit;">
+    Términos y Condiciones
+  </h2>
+
+  <ul style="list-style: disc; margin-left: 20px; font-family: inherit;">
+    <li><strong>Pago:</strong> Se requiere el pago completo antes de comenzar a trabajar en tu comisión.</li>
+
+    <li><strong>Revisiones:</strong> La comisión incluye 1–2 revisiones menores durante la fase de boceto.  
+        Cambios adicionales pueden tener un costo extra.</li>
+
+    <li><strong>Reembolsos:</strong> Solo se realizan reembolsos si aún no he comenzado el trabajo.</li>
+
+    <li><strong>Tiempos de entrega:</strong> El tiempo puede variar según la complejidad.  
+        Siempre te mantendré al tanto del progreso.</li>
+
+    <li><strong>Uso:</strong> Las comisiones son para <strong>uso personal</strong>, a menos que acordemos lo contrario.  
+        Para uso comercial o redistribución se requiere una licencia adicional.</li>
+
+    <li><strong>Derechos de autor:</strong> Conservo los derechos del arte.  
+        Puedo publicar la ilustración en mi portafolio o redes sociales, salvo que pidas privacidad.</li>
+
+    <li><strong>Referencias:</strong> Las referencias claras son muy útiles y ayudan a lograr un mejor resultado.</li>
+
+    <li><strong>No NSFW / No contenido ofensivo:</strong> Me reservo el derecho de rechazar trabajos con temas que no sean apropiados o con los que no me sienta cómodo.</li>
+  </ul>
+
+</section>
+
+
+<form class="commission-form" id="commissionForm" action="https://formspree.io/f/manpvokr" method="POST" novalidate>
+      <label for="name">Tu Nombre*</label>
+      <input type="text" id="name" name="name" required minlength="2" placeholder="Tu nombre">
+      <small class="error-message" id="nameError"></small>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+      <small class="error-message" id="emailError"></small>
+
+      <label for="message">Mensaje*</label>
+      <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Describe tu idea. Podés incluir referencias, mood, pose, colores, etc."></textarea>
+      <small class="error-message" id="messageError"></small>
+
+      <label for="artwork">Tipo de Trabajo</label>
+      <select id="artwork" name="artwork" required>
+        <option value="">Seleccioná una opción</option>
+        <option value="Sketch / Lineart">Sketch / Lineart</option>
+        <option value="Portrait">Retrato</option>
+        <option value="Half / Full Body">Medio Cuerpo / Cuerpo Completo</option>
+        <option value="Complex Background">Fondo Complejo</option>
+      </select>
+      <small class="error-message" id="artworkError"></small>
+
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+
+    <footer style="background-color: #0a0a0a; color: #aaa; text-align: center; padding: 25px 0; margin-top: 60px; font-size: 0.95rem;">
+      <p>&copy; 2025 <strong>Nombre del Artista</strong> — Todos los derechos reservados.</p>
+      <p style="margin-top: 5px; font-size: 0.85rem; color: #666;">
+        Sitio diseñado por <a href="#" style="color: #fff; text-decoration: none;">Diego T.</a>
+      </p>
+    </footer>
+
+<script src="validacionFormulario.js"></script>
+</body>
+</html>
